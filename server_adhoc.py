@@ -10,7 +10,7 @@ def home():
 def camelo():
     return render_template("camelo.html")
 
-# Rota para páginas HTML independentes (opcional)
+# Rota para páginas HTML independentes
 @app.route("/pagina/<nome>")
 def pagina(nome):
     return render_template(f"{nome}.html")
