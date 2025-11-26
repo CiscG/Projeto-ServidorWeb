@@ -10,6 +10,10 @@ app = Flask(
 def home():
     return render_template("index.html")
 
+@app.route("/camelo")
+def camelo():
+    return render_template("camelo.html")
+
 # Rota para páginas HTML independentes (opcional)
 @app.route("/pagina/<nome>")
 def pagina(nome):
